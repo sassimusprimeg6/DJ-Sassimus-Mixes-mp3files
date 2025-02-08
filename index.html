@@ -42,22 +42,102 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            width: 100%;
+        }
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-    <h1>DJ Sassimus Mashups/Remixes MP3 Files (Available for Download)</h1>
-    <ul>
-        <li><a href="downloadable_files/The Way I am Lying From You- Linkin Park ft Eminem (DJ Sassimus Mashup).mp3" download>The Way I am Lying From You (DJ Sassimus Mashup)</a></li>
-        <li><a href="downloadable_files/Remember the Points- Linkin Park ft Eminem (DJ Sassimus Remix).mp3" download>Remember the Points (DJ Sassimus Remix)</a></li>
-        <li><a href="downloadable_files/Til I am With You- Linkin Park ft Eminem (DJ Sassimus Remix).mp3" download>Til I am With You (DJ Sassimus Remix)</a></li>
-        <li><a href="downloadable_files/Still a Thug for Life- Tupac ft Ice Cube (DJ Sassimus Remix).mp3" download>Still a Thug for Life (DJ Sassimus Remix)</a></li>
-        <li><a href="downloadable_files/Life is a Highway- Lightning McQueen (DJ Sassimus AI cover).mp3" download>Life is a Highway by Lightning McQueen aka Owen Wilson (DJ Sassimus AI Cover)</a></li>
-        <li><a href="downloadable_files/Unknown from ME (Knuckles the Echidna theme)- Idris Elba (DJ Sassimus AI Cover).mp3" download>Unknown from M.E. (Knuckles the Echidna's Theme) by Idris Elba (DJ Sassimus AI Cover)</a></li>
-        <li><a href="downloadable_files/His Hero- Nickelback vs Sonic 06 (DJ Sassimus Mashup).mp3" download>His Hero (DJ Sassimus Mashup)</a></li>
-        <li><a href="downloadable_files/I am All of Criminal- Disturbed vs Crush 40 (DJ Sassimus Mashup).mp3" download>I am All of Criminal (DJ Sassimus Mashup)</a></li>
-        <li><a href="downloadable_files/Alright the Way I Are- Kendrick Lamar vs Timbaland (DJ Sassimus Mashup).mp3" download>Alright the Way I Are (DJ Sassimus Mashup)</a></li>
-    </ul>
-  </div>
+        <h1>DJ Sassimus Mashups/Remixes MP3 Files (Available for Download)</h1>
+        <div class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn">DJ Sassimus Mashups 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="downloadable_files/The Way I am Lying From You- Linkin Park ft Eminem (DJ Sassimus Mashup).mp3" download>The Way I am Lying From You (DJ Sassimus Mashup)</a>
+                    <a href="downloadable_files/Alright the Way I Are- Kendrick Lamar vs Timbaland (DJ Sassimus Mashup).mp3" download>Alright the Way I Are (DJ Sassimus Mashup)</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">DJ Sassimus Remixes 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="downloadable_files/Remember the Points- Linkin Park ft Eminem (DJ Sassimus Remix).mp3" download>Remember the Points (DJ Sassimus Remix)</a>
+                    <a href="downloadable_files/Til I am With You- Linkin Park ft Eminem (DJ Sassimus Remix).mp3" download>Til I am With You (DJ Sassimus Remix)</a>
+                    <a href="downloadable_files/Still a Thug for Life- Tupac ft Ice Cube (DJ Sassimus Remix).mp3" download>Still a Thug for Life (DJ Sassimus Remix)</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Sonic vs. Rock n Roll 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="downloadable_files/His Hero- Nickelback vs Sonic 06 (DJ Sassimus Mashup).mp3" download>His Hero (DJ Sassimus Mashup)</a>
+                    <a href="downloadable_files/I am All of Criminal- Disturbed vs Crush 40 (DJ Sassimus Mashup).mp3" download>I am All of Criminal (DJ Sassimus Mashup)</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">DJ Sassimus AI Covers 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="downloadable_files/Life is a Highway- Lightning McQueen (DJ Sassimus AI cover).mp3" download>Life is a Highway by Lightning McQueen aka Owen Wilson (DJ Sassimus AI Cover)</a>
+                    <a href="downloadable_files/Unknown from ME (Knuckles the Echidna theme)- Idris Elba (DJ Sassimus AI Cover).mp3" download>Unknown from M.E. (Knuckles the Echidna's Theme) by Idris Elba (DJ Sassimus AI Cover)</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
